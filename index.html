@@ -13,8 +13,8 @@
               background-color: rgb(236, 229, 220);
           }
           .navbar + .content section {
-              padding-top: 70px; 
-              margin-top: -70px;
+              padding-top: 60px; 
+              margin-top: -60px;
               display: block;
           }
           .navbar {
@@ -26,6 +26,7 @@
               width: 100%;
           }
           h1 {
+              padding-top: 0.6em;
               font-family: 'Tangerine', serif;
               text-shadow: 1px 1px 50px rgb(43, 126, 70);
               text-align: center;
@@ -62,13 +63,8 @@
               font-family: Papyrus, fantasy;
               font-size: 1.2em;
           }
-          #par1 {
+          .par {
             text-align: justify;
-            margin-right: 1em;
-          }
-          #par2 {
-            text-align: justify;
-            margin-left: 1em;
           }
           #visit1 b {
               color: orange;
@@ -78,7 +74,7 @@
             text-decoration: underline;
             text-underline-offset: 0.25em;
           }
-          ol.animals li:hover::after {
+          .card-text:hover::after {
               content: " <3";
               color: rgb(148, 27, 27);
               font-weight: bold;
@@ -139,7 +135,7 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-        <p id="par1">Visiting the <i>zoo</i> offers an enchanting journey 
+        <p class="par">Visiting the <i>zoo</i> offers an enchanting journey 
             into the wild, showcasing a diverse tapestry of creatures from <b>around the globe</b>. It's a 
             captivating experience where education and entertainment <b>harmonize effortlessly</b>. For 
             children, it's a window to the animal kingdom, fostering empathy and curiosity. Observing
@@ -152,7 +148,7 @@
         </p>
     </div>
     <div class="col-md-6">
-        <p id="par2">Beyond its educational aspects, the <i>zoo</i> is a 
+        <p class="par">Beyond its educational aspects, the <i>zoo</i> is a 
             sanctuary for family bonding and recreation. It's a haven where people of all ages can 
             revel in the joy of discovering new species, enjoying outdoor spaces, and sharing moments 
             of awe together. The <i>zoo</i>'s serene ambiance and the chance to witness animals in 
@@ -239,7 +235,7 @@
     <section id="map">
     <h2>Map</h2>
     <div class="container">
-    <p>
+    <p class="par">
         Going through the <b>enterance</b> you will be in the Blue zone. 
         From the enterance take the 1<sup>st</sup> right twice to go over to the pink zone.
         Again from the enterance go left then right at Barday Court to enter the Orange zone.
