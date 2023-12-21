@@ -9,11 +9,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
-        body{
+          body {
               background-color: rgb(236, 229, 220);
           }
-          .content {
-              padding-top: 4em;
+          .navbar + .content section {
+              padding-top: 70px; 
+              margin-top: -70px;
+              display: block;
           }
           .navbar {
               position:fixed;
@@ -23,7 +25,7 @@
               z-index: 1000;
               width: 100%;
           }
-          h1{
+          h1 {
               font-family: 'Tangerine', serif;
               text-shadow: 1px 1px 50px rgb(43, 126, 70);
               text-align: center;
@@ -35,7 +37,7 @@
               margin-right: 0;
               font-weight: bold;
           }
-          h2{
+          h2 {
               display: block;
               color: darksalmon;
               font-size: 1.8em;
@@ -49,48 +51,48 @@
               margin-right: 0;
               font-weight: bold;
           }
-          p i::before{
+          p i::before {
               content: "London ";
               font: italic small-caps bold 1em cursive;
           }
-          p i{
+          p i {
               font: italic small-caps bold 1em cursive;
           }
-          p, pre, li{
+          p, pre, li {
               font-family: Papyrus, fantasy;
               font-size: 1.2em;
           }
-          #par1{
+          #par1 {
             text-align: justify;
             margin-right: 1em;
           }
-          #par2{
+          #par2 {
             text-align: justify;
             margin-left: 1em;
           }
-          #visit1 b{
+          #visit1 b {
               color: orange;
           }
-          #visit1 b:hover{
+          #visit1 b:hover {
             text-emphasis: filled double-circle orange;
             text-decoration: underline;
             text-underline-offset: 0.25em;
-        }
-          .animals:hover::after{
+          }
+          ol.animals li:hover::after {
               content: " <3";
               color: rgb(148, 27, 27);
               font-weight: bold;
           }
-          #londonzoo{
+          #londonzoo {
             font-size: 1.5em;
             font-weight: bold;
             margin-top: 0.83em;
             margin-bottom: 0.83em;
           }
-          #contents{
+          #contents {
             padding-bottom: 2.5em;
           }
-          ul{
+          ul {
             list-style-type:none;
             padding: 0;
             margin: 0;
@@ -99,7 +101,6 @@
 </head>
 
 <body>
-    <div class="container content">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">&#128062</a>
@@ -123,20 +124,17 @@
                 </ul>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
 
+    <div class="container content">
     <h1 id="mytitle" title="Welcome!">The <i>Zoo</i> &#128062</h1> <!--Paws emoji-->
-
+    <section id="whyvisit">  
     <div class="container" title="by ChatGPT">
         <div class="row align-items-center justify-content-center">
             <div class="col">
-              <h2 id="whyvisit">Why to visit the zoo</h2>
+              <h2>Why to visit the zoo</h2>
             </div>         
         </div>
         <div class="row">
@@ -168,10 +166,11 @@
     </div>
         
     </div>
+    </section>  
     
     <hr>
-
-    <h2 id="firstvisit" title="So exciting!!">First visit to the zoo</h2>
+    <section id="firstvisit">
+    <h2 title="So exciting!!">First visit to the zoo</h2>
 
     <p id="visit1" title="So exciting!!">
         The first time you go to the zoo you need to take the <b>WHOLE</b> day! 
@@ -182,51 +181,73 @@
 
     <h4>Remember to wear <u><i>comfortable</i></u> shoes.</h4>
 
+    </section>
+
     <hr> 
 
-    <h2 id="animals"> Some animals &#128024</h2>  <!--Elephant emoji-->
-
+    <section id="animals">
+    <h2> Some animals &#128024</h2>  <!--Elephant emoji-->
     <div class="container text-left">
       <div class="row">
-        <div class="col-md-5">
-          <ol>
-            <li class="animals">Abdim's stork</li>
-            <li class="animals">African bullfrog</li>
-            <li class="animals">African wild dog</li>
-            <li class="animals">Alaotran gentle lemur</li>
-            <li class="animals">Alpaca</li>
-            <li class="animals">Annam leaf turtle</li>
-            <li class="animals">Asian short-clawed otter</li>
-            <li class="animals">Asiatic lion</li>
-            <li class="animals">Axolotl</li>
-            <li class="animals">Aye-aye</li>
-            <li class="animals">Big-headed turtle</li>
-            <li class="animals">Black-capped squirrel monkey</li>
-         </ol>
+        <div class="col-md-6">
+          <div class="card" style="width: 100%;">
+            <img src="https://cms.londonzoo.org/sites/default/files/styles/1920w/public/2022-11/Otters%20251019%20HJ%20five.png?itok=xCaeyIQT"
+            alt="Asian short-clawed otters" width="100%" title="Asian short-clawed otters">
+            <div class="card-body">
+              <p class="card-text">Asian short-clawed otters</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-7">
-          <img src="https://cms.londonzoo.org/sites/default/files/styles/1920w/public/2022-11/Otters%20251019%20HJ%20five.png?itok=xCaeyIQT"
-                alt="Alaotran gentle lemur" width="100%" title="Asian short-clawed otters">
+        <div class="col-md-6">
+          <div class="card" style="width: 100%;">
+            <img src="https://cms.londonzoo.org/sites/default/files/styles/responsive/public/1024/635/1/2022-11/Asim-at-London-Zoo.jpg"
+            alt="Sumatran tiger" width="100%" title="Sumatran tiger">
+            <div class="card-body">
+              <p class="card-text">Sumatran tiger</p>
+            </div>
+          </div>
         </div>
-      </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card" style="width: 100%;">
+              <img src="https://cms.londonzoo.org/sites/default/files/styles/responsive/public/1024/635/1/2022-11/Giraffe-eating_0.jpg"
+              alt="Giraffe" width="100%" title="Giraffe">
+              <div class="card-body">
+                <p class="card-text">Giraffe</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card" style="width: 100%;">
+              <img src="https://cms.londonzoo.org/sites/default/files/styles/1920w/public/2022-11/A%20Chapman%27s%20zebra%20at%20London%20Zoo%20two.png?itok=3DKRgc9U"
+              alt="Chapman's zebra" width="100%" title="Chapman's zebra">
+              <div class="card-body">
+                <p class="card-text">Chapman's zebra</p>
+              </div>
+            </div>
+          </div>
+          </div>
     </div>
-    
+    </section>
     <p id="londonzoo">
         Visit the London zoo website <a class="website" href="https://www.londonzoo.org/whats-here/animals" target="_blank">here</a> to see all animals!
     </p>
     
     <hr>
 
-    <h2 id="map">Map</h2>
-
+    <section id="map">
+    <h2>Map</h2>
+    <div class="container">
     <p>
         Going through the <b>enterance</b> you will be in the Blue zone. 
         From the enterance take the 1<sup>st</sup> right twice to go over to the pink zone.
         Again from the enterance go left then right at Barday Court to enter the Orange zone.
     </p>
-    
     <img src="https://cms.londonzoo.org/sites/default/files/styles/1024w/public/2023-10/LZ-map-2023.jpg?itok=mdo10gyC"
     alt="Map of London Zoo" width="100%" height="100%">
+    </div>
+    </section>
 
     <hr>
 
@@ -242,10 +263,7 @@
             </ul>
         </div>
     </div>
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
